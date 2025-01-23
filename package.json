@@ -1,0 +1,27 @@
+{
+  "name": "tsup-dual-export-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsup index.mts --dts --format cjs,esm",
+    "declarations": "tsc --emitDeclarationOnly --declaration"
+  },
+  "engines": {
+    "node": ">=22.12"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.0",
+    "@types/node": "^22.10.7",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "cat-names": "^4.0.0",
+    "dog-names": "^2.1.0"
+  }
+}
