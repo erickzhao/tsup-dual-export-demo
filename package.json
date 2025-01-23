@@ -4,8 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "tsup index.mts --dts --format cjs,esm",
-    "declarations": "tsc --emitDeclarationOnly --declaration"
+    "build": "tsup --dts --format cjs,esm"
   },
   "engines": {
     "node": ">=22.12"

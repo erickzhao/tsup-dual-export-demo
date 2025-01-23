@@ -4,6 +4,8 @@ import { randomCatName } from "cat-names";
 // `dog-names` v2 is a CommonJS package
 import dog from "dog-names";
 
+import { mySecondFunction } from "./utils.mjs";
+
 export interface MyInterface {
   foo: string;
   bar: number;
@@ -13,6 +15,7 @@ export function myFunction(): void {
   console.log(path.join("foo", "bar"));
   console.log("I have a cat named", randomCatName());
   console.log("I have a dog named", dog.allRandom());
+  mySecondFunction();
 }
 
 myFunction();

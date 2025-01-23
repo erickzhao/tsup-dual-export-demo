@@ -26,20 +26,20 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
   mod
 ));
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
-
-// index.mts
 var index_exports = {};
 __export(index_exports, {
   myFunction: () => myFunction
 });
 module.exports = __toCommonJS(index_exports);
-var import_node_path = __toESM(require("path"), 1);
+var import_node_path = __toESM(require("node:path"), 1);
 var import_cat_names = require("cat-names");
 var import_dog_names = __toESM(require("dog-names"), 1);
+var import_utils = require("./utils.mjs");
 function myFunction() {
   console.log(import_node_path.default.join("foo", "bar"));
   console.log("I have a cat named", (0, import_cat_names.randomCatName)());
   console.log("I have a dog named", import_dog_names.default.allRandom());
+  (0, import_utils.mySecondFunction)();
 }
 myFunction();
 // Annotate the CommonJS export names for ESM import in node:
